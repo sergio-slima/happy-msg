@@ -107,7 +107,7 @@
     }
 
     .modal-content .modal-message {
-      font-size: 36px;
+      font-size: 32px;
       color: #fff;
       margin-bottom: 20px;
     }
@@ -175,7 +175,8 @@
       </div>
       <button class="button">Clique aqui</button>
     </div>
-    <p class="congratulations">Parabéns! Será incrível ter a sua presença conosco.</p>
+    <p class="congratulations">Parabéns, Sérgio! Será incrível ter a sua presença conosco.</p>
+    <p class="congratulations">RJC - Reencontro de Jovens com Cristo - 2023.</p>
   </div>
 
   <div class="floating-images">
@@ -187,12 +188,13 @@
 
   <div class="modal">
     <div class="modal-content">
-      <p class="modal-message">Opa! Faltam 23 dias para o RJC.</p>
-      <p class="modal-message">Coisas extraordinárias estão por vir. Bora?</p>
+      <p class="modal-message" id="countdown">Opa! Faltam 23 dias para o RJC.</p>
+      <p class="modal-message">Prepare-se para aproveitar cada segundo dessa experiência única! Bora?</p>
       <button class="modal-button">Eu Vou!</button>
     </div>
   </div>
 
+  <script src="https://www.napoleon.com.br/codigos/confetti.min.js"></script>
   <script>
     var floatingImages = document.querySelector(".floating-images");
 
@@ -224,7 +226,28 @@
       modal.style.display = "none";
       var congratulations = document.querySelector(".congratulations");
       congratulations.style.display = "block";
+
+      // Efeito de explosão de confetes
+      confetti.start();
+      setTimeout(function() {
+        confetti.stop();
+      }, 3000);
     });
+
+    // Contagem regressiva
+    var countdown = document.getElementById("countdown");
+    var currentDate = new Date();
+    var targetDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate() + 24);
+    var countdownInterval = setInterval(updateCountdown, 1000);
+
+    function updateCountdown() {
+      var now = new Date();
+      var distance = targetDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+      countdown.innerHTML = "Opa! Faltam " + days + " dias para o RJC.";
+    }
   </script>
 </body>
 </html>
