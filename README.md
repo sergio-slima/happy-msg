@@ -16,7 +16,7 @@
 </p>
 
 <h1 align="center">
-  <img src="screen.png" alt="Happy Message 🎉" height="100" width="auto">
+  <img src="screen.png" alt="Happy Message 🎉" height="auto" width="800">
 </h1>
 
 
