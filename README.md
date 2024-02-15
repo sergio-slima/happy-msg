@@ -1,8 +1,8 @@
 <h1 align="center">
-  <img src="./assets/logo.svg" alt="dev.finances" height="100" width="250">
+  Happy Message 🎉
 </h1>
 
-#### Essa aplicação Happy Msg,  tem o objetivo de dar uma mensagem feliz para um amigo.
+#### Essa aplicação Happy Message,  tem o objetivo de dar uma mensagem feliz para um amigo.
 
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
@@ -16,7 +16,7 @@
 </p>
 
 <h1 align="center">
-  <img src="./assets/print.PNG" alt="Print Tela" height="500" width="800">
+  <img src="./assets/screen.png" alt="Happy Message 🎉" height="100" width="auto">
 </h1>
 
 
