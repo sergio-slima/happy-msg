@@ -239,12 +239,16 @@
 
     function updateCountdown() {
       var now = new Date();
-      var targetDate = new Date("06/12/2024");
+      var targetDate = new Date("12/06/2024");
       var distance = targetDate - now;
 
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
-      countdown.innerHTML = "Opa! Faltam " + days + " dias para o RJC de Açailândia.";
+      if (now === targetDate) {
+        countdown.innerHTML = "Opa! Hoje é o dia. Se prepare para grandes emoções no RJC de Açailândia.";
+      } else {
+        countdown.innerHTML = "Opa! Faltam " + days + " dias para o RJC de Açailândia.";
+      }
     }
     updateCountdown();
     setInterval(updateCountdown, 1000);
